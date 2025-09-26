@@ -7,14 +7,27 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-  <style>html { scroll-behavior:smooth; }</style>
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
 </head>
 <body class="font-sans bg-gray-50">
 
+<!-- Top Bar (Email and Phone in single line) -->
+<div class="bg-gray-900 text-gray-200 text-sm py-2 px-6 flex justify-center md:justify-start items-center gap-8">
+  <span>📞 9346074520</span>
+  <span>✉️ <a href="mailto:manaacademy18@gmail.com" class="hover:underline">manaacademy18@gmail.com</a></span>
+</div>
+
 <!-- Header -->
 <header class="flex justify-between items-center p-6 shadow-lg bg-gradient-to-r from-orange-500 to-green-500 animate__animated animate__fadeInDown">
-  <h1 class="text-3xl font-extrabold text-white tracking-wide">Mana Academy</h1>
-  <nav class="space-x-6 text-white font-semibold">
+  <div class="flex items-center gap-3">
+    <img src="logo.png" alt="Mana Academy Logo" class="h-12 w-12 rounded-full shadow-lg">
+    <h1 class="text-3xl font-extrabold text-white tracking-wide">Mana Academy</h1>
+  </div>
+
+  <!-- Navigation always in single line -->
+  <nav class="flex flex-row space-x-6 text-white font-semibold whitespace-nowrap overflow-x-auto">
     <a href="#home" class="hover:text-yellow-200 transition">Home</a>
     <a href="#courses" class="hover:text-yellow-200 transition">Courses</a>
     <a href="#about" class="hover:text-yellow-200 transition">About</a>
@@ -23,7 +36,7 @@
   </nav>
 </header>
 
-<!-- Hero -->
+<!-- Hero Section -->
 <section id="home" class="bg-gradient-to-r from-orange-400 to-green-600 text-white text-center py-28 shadow-md animate__animated animate__fadeIn">
   <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-center gap-10">
     <div class="flex-1">
@@ -44,117 +57,77 @@
 </section>
 
 <!-- Courses -->
-<section id="courses" class="py-20 px-6 bg-gray-100">
-  <h3 class="text-4xl font-bold text-center mb-14 text-gray-800 animate__animated animate__fadeInUp">Our Programs</h3>
-  <div class="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
-
-    <div class="bg-white rounded-2xl shadow-2xl p-8 transform hover:scale-105 transition animate__animated animate__fadeInLeft">
-      <div class="mb-4 text-orange-600 text-4xl">🎓</div>
-      <h4 class="text-2xl font-bold mb-4 text-gray-800">Weekend VLSI Training</h4>
-      <ul class="list-disc ml-6 text-gray-600 leading-relaxed">
-        <li>Digital Electronics</li>
-        <li>Computer Architecture</li>
-        <li>Verilog & System Verilog</li>
-        <li>Physical Design</li>
-        <li>Placement Assistance</li>
-        <li><span class="font-semibold">Classes held on weekends only</span></li>
-      </ul>
+<section id="courses" class="py-16 px-6 bg-white">
+  <h3 class="text-3xl font-bold text-center mb-12">Our Courses</h3>
+  <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+    <div class="bg-gray-100 rounded-xl shadow-lg p-6 hover:shadow-2xl transition">
+      <h4 class="text-xl font-bold mb-2">Weekend VLSI Training</h4>
+      <p>Industry-focused VLSI coaching designed for students and professionals on weekends.</p>
     </div>
-
-    <div class="bg-white rounded-2xl shadow-2xl p-8 transform hover:scale-105 transition animate__animated animate__fadeInRight">
-      <div class="mb-4 text-green-600 text-4xl">📖</div>
-      <h4 class="text-2xl font-bold mb-4 text-gray-800">Intermediate Coaching</h4>
-      <p class="text-gray-600 leading-relaxed">
-        Expert guidance in MPC, BiPC, and other streams to build a strong academic foundation for college readiness.
-      </p>
+    <div class="bg-gray-100 rounded-xl shadow-lg p-6 hover:shadow-2xl transition">
+      <h4 class="text-xl font-bold mb-2">Intermediate Coaching</h4>
+      <p>Comprehensive support for Intermediate students with experienced faculty.</p>
     </div>
-
-    <div class="bg-white rounded-2xl shadow-2xl p-8 transform hover:scale-105 transition animate__animated animate__fadeInLeft">
-      <div class="mb-4 text-blue-600 text-4xl">📝</div>
-      <h4 class="text-2xl font-bold mb-4 text-gray-800">IIT Foundation (8th-10th)</h4>
-      <ul class="list-disc ml-6 text-gray-600 leading-relaxed">
-        <li>Physics, Chemistry, Math fundamentals</li>
-        <li>Problem Solving & Logical Reasoning</li>
-        <li>Foundation for JEE & Competitive Exams</li>
-        <li>Strong Academic Guidance</li>
-      </ul>
+    <div class="bg-gray-100 rounded-xl shadow-lg p-6 hover:shadow-2xl transition">
+      <h4 class="text-xl font-bold mb-2">IIT Foundation (8th, 9th, 10th)</h4>
+      <p>Strong foundation courses to prepare students for IIT & other competitive exams.</p>
     </div>
-
   </div>
 </section>
 
 <!-- About -->
-<section id="about" class="py-20 px-6 bg-gray-100 animate__animated animate__fadeInUp">
-  <h3 class="text-4xl font-bold text-center mb-12 text-gray-800">About Us</h3>
-  <div class="max-w-4xl mx-auto text-center text-gray-700 space-y-6">
-    <p class="text-lg leading-relaxed">
-      Mana Academy is dedicated to nurturing the next generation of engineers and students. Founded by an 
-      <span class="font-semibold text-gray-900">NIT Calicut graduate and former IB Officer</span> with industry experience, we aim to blend academic excellence with career guidance.
-    </p>
-    <p class="text-lg leading-relaxed">
-      Our vision is to empower students through strong fundamentals, hands-on training, and real-world projects that prepare them for successful careers.
-    </p>
-  </div>
+<section id="about" class="py-16 px-6 bg-gray-50 text-center">
+  <h3 class="text-3xl font-bold mb-6">About Us</h3>
+  <p class="max-w-3xl mx-auto text-lg">Mana Academy is committed to delivering high-quality coaching for students and professionals. With expert faculty and structured courses, we focus on academic excellence and career success.</p>
 </section>
 
 <!-- Enroll Form -->
-<section id="enroll" class="py-20 px-6 bg-gradient-to-r from-green-50 to-orange-50 animate__animated animate__fadeInUp">
-  <h3 class="text-4xl font-bold text-center mb-12 text-gray-800">Enroll Now</h3>
-  <div class="max-w-3xl mx-auto bg-white shadow-2xl rounded-2xl p-10">
-    <form id="enrollForm" class="space-y-6">
-      <div>
-        <label class="block text-left font-semibold text-gray-700">Full Name</label>
-        <input type="text" name="name" required class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-orange-400">
-      </div>
-      <div>
-        <label class="block text-left font-semibold text-gray-700">Email</label>
-        <input type="email" name="email" required class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-orange-400">
-      </div>
-      <div>
-        <label class="block text-left font-semibold text-gray-700">Phone Number</label>
-        <input type="text" name="phone" required class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-orange-400">
-      </div>
-      <div>
-        <label class="block text-left font-semibold text-gray-700">Program</label>
-        <select name="program" required class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-orange-400">
-          <option value="">Select Program</option>
-          <option>Weekend VLSI Training</option>
-          <option>Intermediate Coaching</option>
-          <option>IIT Foundation (8th-10th)</option>
-        </select>
-      </div>
-      <button type="submit" class="bg-orange-500 hover:bg-orange-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg transition">
-        Submit Enrollment
-      </button>
-    </form>
-  </div>
+<section id="enroll" class="py-16 px-6 bg-gradient-to-r from-green-100 to-blue-100">
+  <h3 class="text-3xl font-bold text-center mb-10">Enroll Now</h3>
+  <form id="enrollForm" class="max-w-lg mx-auto bg-white shadow-xl rounded-2xl p-8 space-y-4">
+    <input type="text" name="name" placeholder="Full Name" required class="w-full border p-3 rounded"/>
+    <input type="email" name="email" placeholder="Email" required class="w-full border p-3 rounded"/>
+    <input type="text" name="phone" placeholder="Phone Number" required class="w-full border p-3 rounded"/>
+    <select name="program" required class="w-full border p-3 rounded">
+      <option value="">Select Program</option>
+      <option>Weekend VLSI Training</option>
+      <option>Intermediate Coaching</option>
+      <option>IIT Foundation (8th, 9th, 10th)</option>
+    </select>
+    <button type="submit" class="w-full bg-green-600 text-white py-3 rounded font-bold hover:bg-green-700 transition">Submit</button>
+  </form>
 </section>
 
 <!-- Contact -->
-<section id="contact" class="py-20 px-6 bg-white animate__animated animate__fadeInUp">
-  <h3 class="text-4xl font-bold text-center mb-12 text-gray-800">Contact Us</h3>
-  <div class="text-center text-gray-700 space-y-3">
-    <p class="text-xl font-semibold">Mana Academy</p>
-    <p>Near SR College Boys Hostel, Karimnagar</p>
-    <p>Phone: <span class="font-semibold text-gray-900">9346074520</span></p>
-    <p>Email: <a href="mailto:manohargajengi789@gmail.com" class="text-orange-600 hover:underline">manohargajengi789@gmail.com</a></p>
+<section id="contact" class="py-16 px-6 text-center bg-gray-100">
+  <h3 class="text-3xl font-bold mb-6">Contact Us</h3>
+  <p class="font-semibold text-lg mb-1">Mana Academy</p>
+  <p class="mb-2">
+    📍 <a href="https://www.google.com/maps/place/Near+SR+College+Boys+Hostel,+Karimnagar" target="_blank" class="text-blue-600 hover:underline">
+      Near SR College Boys Hostel, Karimnagar
+    </a>
+  </p>
+  <p class="text-lg">📞 9346074520 | ✉️ <a href="mailto:manaacademy18@gmail.com" class="text-blue-600 hover:underline">manaacademy18@gmail.com</a></p>
+  
+  <!-- Embedded Google Map -->
+  <div class="mt-6 flex justify-center">
+    <iframe
+      src="https://www.google.com/maps?q=Near+SR+College+Boys+Hostel,+Karimnagar&output=embed"
+      class="w-full max-w-3xl h-64 rounded-2xl shadow-lg border-0"
+      allowfullscreen="" loading="lazy">
+    </iframe>
   </div>
 </section>
 
-<!-- Footer -->
-<footer class="bg-gradient-to-r from-gray-800 to-gray-900 text-white text-center py-6 mt-6 shadow-inner animate__animated animate__fadeIn">
-  <p class="text-sm">&copy; <span id="year"></span> Mana Academy. All Rights Reserved.</p>
+<footer class="bg-gray-900 text-gray-300 text-center py-6">
+  © <span id="year"></span> Mana Academy. All Rights Reserved.
 </footer>
 
 <script>
   document.getElementById('year').innerText = new Date().getFullYear();
 
-  // Initialize EmailJS
-  (function(){
-    emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your EmailJS Public Key
-  })();
+  (function(){ emailjs.init("YOUR_PUBLIC_KEY"); })();
 
-  // Handle form submission
   document.getElementById('enrollForm').addEventListener('submit', function(event) {
     event.preventDefault();
     emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
