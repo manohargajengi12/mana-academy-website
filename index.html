@@ -13,7 +13,7 @@
 </head>
 <body class="font-sans bg-gray-50">
 
-<!-- Top Bar (Email and Phone in single line) -->
+<!-- Top Bar -->
 <div class="bg-gray-900 text-gray-200 text-sm py-2 px-6 flex justify-center md:justify-start items-center gap-8">
   <span>📞 9346074520</span>
   <span>✉️ <a href="mailto:manaacademy18@gmail.com" class="hover:underline">manaacademy18@gmail.com</a></span>
@@ -26,7 +26,7 @@
     <h1 class="text-3xl font-extrabold text-white tracking-wide">Mana Academy</h1>
   </div>
 
-  <!-- Navigation always in single line -->
+  <!-- Navigation -->
   <nav class="flex flex-row space-x-6 text-white font-semibold whitespace-nowrap overflow-x-auto">
     <a href="#home" class="hover:text-yellow-200 transition">Home</a>
     <a href="#courses" class="hover:text-yellow-200 transition">Courses</a>
@@ -41,7 +41,7 @@
   <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-center gap-10">
     <div class="flex-1">
       <h2 class="text-5xl font-extrabold mb-6 drop-shadow-lg animate__animated animate__fadeInUp animate__delay-1s">
-        Weekend VLSI, Intermediate & IIT Foundation Coaching
+        Weekend VLSI, GATE (ECE), IIT Foundation & Competitive Coaching
       </h2>
       <p class="text-xl mb-8 max-w-2xl animate__animated animate__fadeInUp animate__delay-2s">
         Placement Assistance | Quality Learning | Expert Faculty
@@ -59,19 +59,39 @@
 <!-- Courses -->
 <section id="courses" class="py-16 px-6 bg-white">
   <h3 class="text-3xl font-bold text-center mb-12">Our Courses</h3>
-  <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-    <div class="bg-gray-100 rounded-xl shadow-lg p-6 hover:shadow-2xl transition">
+  <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-6xl mx-auto">
+    <article class="bg-gray-100 rounded-xl shadow-lg p-6 hover:shadow-2xl transition cursor-pointer">
       <h4 class="text-xl font-bold mb-2">Weekend VLSI Training</h4>
-      <p>Industry-focused VLSI coaching designed for students and professionals on weekends.</p>
-    </div>
-    <div class="bg-gray-100 rounded-xl shadow-lg p-6 hover:shadow-2xl transition">
+      <p>RTL, Verification & PD basics with projects.</p>
+    </article>
+    <article class="bg-gray-100 rounded-xl shadow-lg p-6 hover:shadow-2xl transition cursor-pointer">
+      <h4 class="text-xl font-bold mb-2">GATE Coaching (ECE)</h4>
+      <p>Complete syllabus with mock tests & analysis.</p>
+    </article>
+    <article class="bg-gray-100 rounded-xl shadow-lg p-6 hover:shadow-2xl transition cursor-pointer">
+      <h4 class="text-xl font-bold mb-2">IIT Foundation (8th–10th)</h4>
+      <p>Concept-driven learning for competitive exams.</p>
+    </article>
+    <article class="bg-gray-100 rounded-xl shadow-lg p-6 hover:shadow-2xl transition cursor-pointer">
       <h4 class="text-xl font-bold mb-2">Intermediate Coaching</h4>
-      <p>Comprehensive support for Intermediate students with experienced faculty.</p>
-    </div>
-    <div class="bg-gray-100 rounded-xl shadow-lg p-6 hover:shadow-2xl transition">
-      <h4 class="text-xl font-bold mb-2">IIT Foundation (8th, 9th, 10th)</h4>
-      <p>Strong foundation courses to prepare students for IIT & other competitive exams.</p>
-    </div>
+      <p>Support & strategies for Intermediate students.</p>
+    </article>
+    <article class="bg-gray-100 rounded-xl shadow-lg p-6 hover:shadow-2xl transition cursor-pointer">
+      <h4 class="text-xl font-bold mb-2">Sainik School Coaching</h4>
+      <p>Focused prep for Sainik school exams.</p>
+    </article>
+    <article class="bg-gray-100 rounded-xl shadow-lg p-6 hover:shadow-2xl transition cursor-pointer">
+      <h4 class="text-xl font-bold mb-2">Gurukulam Coaching</h4>
+      <p>Classroom coaching for Gurukulam entrance.</p>
+    </article>
+    <article class="bg-gray-100 rounded-xl shadow-lg p-6 hover:shadow-2xl transition cursor-pointer">
+      <h4 class="text-xl font-bold mb-2">Navodaya Coaching</h4>
+      <p>Jawahar Navodaya prep with tests.</p>
+    </article>
+    <article class="bg-gray-100 rounded-xl shadow-lg p-6 hover:shadow-2xl transition cursor-pointer">
+      <h4 class="text-xl font-bold mb-2">ECET & Polycet</h4>
+      <p>Lateral entry & diploma admissions guidance.</p>
+    </article>
   </div>
 </section>
 
@@ -82,7 +102,7 @@
 </section>
 
 <!-- Enroll Form -->
-<section id="enroll" class="py-16 px-6 bg-gradient-to-r from-green-100 to-blue-100">
+<section id="enroll" class="py-16 px-6 bg-gradient-to-r from-green-100 to-yellow-100">
   <h3 class="text-3xl font-bold text-center mb-10">Enroll Now</h3>
   <form id="enrollForm" class="max-w-lg mx-auto bg-white shadow-xl rounded-2xl p-8 space-y-4">
     <input type="text" name="name" placeholder="Full Name" required class="w-full border p-3 rounded"/>
@@ -91,8 +111,14 @@
     <select name="program" required class="w-full border p-3 rounded">
       <option value="">Select Program</option>
       <option>Weekend VLSI Training</option>
-      <option>Intermediate Coaching</option>
+      <option>GATE Coaching (ECE)</option>
       <option>IIT Foundation (8th, 9th, 10th)</option>
+      <option>Intermediate Coaching</option>
+      <option>Sainik School Coaching</option>
+      <option>Gurukulam Coaching</option>
+      <option>Navodaya Coaching</option>
+      <option>ECET (B.Tech entry)</option>
+      <option>Polycet (Diploma entry)</option>
     </select>
     <button type="submit" class="w-full bg-green-600 text-white py-3 rounded font-bold hover:bg-green-700 transition">Submit</button>
   </form>
@@ -102,13 +128,9 @@
 <section id="contact" class="py-16 px-6 text-center bg-gray-100">
   <h3 class="text-3xl font-bold mb-6">Contact Us</h3>
   <p class="font-semibold text-lg mb-1">Mana Academy</p>
-  <p class="mb-2">
-    📍 <a href="https://www.google.com/maps/place/Near+SR+College+Boys+Hostel,+Karimnagar" target="_blank" class="text-blue-600 hover:underline">
-      Near SR College Boys Hostel, Karimnagar
-    </a>
-  </p>
+  <p class="mb-2">📍 <a href="https://www.google.com/maps/place/Near+SR+College+Boys+Hostel,+Karimnagar" target="_blank" class="text-blue-600 hover:underline">Near SR College Boys Hostel, Karimnagar</a></p>
   <p class="text-lg">📞 9346074520 | ✉️ <a href="mailto:manaacademy18@gmail.com" class="text-blue-600 hover:underline">manaacademy18@gmail.com</a></p>
-  
+
   <!-- Embedded Google Map -->
   <div class="mt-6 flex justify-center">
     <iframe
